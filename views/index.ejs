@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="On9book">
+  <head>
+    <title>Books</title>
+    <base href="/">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/components/bootstrap/dist/css/bootstrap.css' />
+    <link rel='stylesheet' href='/components/sweetalert/lib/sweet-alert.css' />
+  </head>
+  <body>
+  	<div>
+  		<a href="#" ui-sref="index">首頁</a>
+  		<a href="#" ui-sref="new">新增</a>
+  	</div>	
+	<div ui-view></div>
+
+	
+	<script src='/components/jquery/dist/jquery.js'></script>
+	<script src='/components/bootstrap/dist/js/bootstrap.min.js'></script>
+	<script src='/components/angular/angular.js'></script>
+	<script src='/components/ng-file-upload/angular-file-upload.js'></script>
+	<script src='/components/angular-ui-router/release/angular-ui-router.js'></script>
+	<script src='/components/angular-sweetalert/SweetAlert.min.js'></script>
+	<script src='/components/sweetalert/lib/sweet-alert.min.js'></script>
+	<script src='/components/angular-hotkeys/build/hotkeys.js'></script>
+	<script src='/javascripts/app.js'></script>
+	<script src='/javascripts/book/controller.js'></script>
+	<script src='/javascripts/new/controller.js'></script>
+	<script src='/javascripts/index/controller.js'></script>
+  </body>
+</html>
