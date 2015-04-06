@@ -60,7 +60,9 @@ exports.GetbookById = function(req, res) {
 };
 
 exports.saveImage = function(req, res) {
-	if (req.files.file.type != Array) {
+	console.log(req.files.file[0]);
+	if (req.files.file[0] === undefined) {
+		console.log('hello')
 		req.files.file = [req.files.file];
 	}
 

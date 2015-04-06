@@ -24,7 +24,6 @@ app.use(logger('dev'));
 app.use(multer({
     dest: './public/uploads/',
     rename: function(fieldname, filename, req, res) {
-        console.log(filename);
         return filename.replace(/\W+/g, '-').toLowerCase() + Date.now() + '.' + mime.extension(req.body.type);
     },
     changeDest: function(dest, req, res) {
