@@ -144,9 +144,7 @@ nextPage = function(){
         */
         console.log('skip nextPage');
     }
-
-    //last page
-    if( currentPage+2 > materialCollection.length-1 )
+    else if( currentPage+2 > materialCollection.length-1 )
     {
         if(on9 == 0)
         {
@@ -183,9 +181,7 @@ backPage = function(){
         */
         console.log('skip backPage');
     }
-
-    //last page
-    if( currentPage-2 < 0 )
+    else if( currentPage-2 < 0 )
     {
         console.log('no back');
     }
