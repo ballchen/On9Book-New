@@ -144,9 +144,7 @@ nextPage = function(){
         */
         console.log('skip nextPage');
     }
-
-    //last page
-    if( currentPage+2 > materialCollection.length-1 )
+    else if( currentPage+2 > materialCollection.length-1 )
     {
         if(on9 == 0)
         {
@@ -183,9 +181,7 @@ backPage = function(){
         */
         console.log('skip backPage');
     }
-
-    //last page
-    if( currentPage-2 < 0 )
+    else if( currentPage-2 < 0 )
     {
         console.log('no back');
     }
@@ -209,19 +205,19 @@ backPage = function(){
 
 if(pageLock==1 && direct ==1)
 {
-if( midParent.rotation.y >= -incre*89 )
+if( midParent.rotation.y >= -incre*88 )
 {
-    midParent.rotation.y -=incre*direct;
+    midParent.rotation.y -=incre*2;
     rightObject.material = materialCollection[currentPage+1];
 }
-else if( midParent.rotation.y >= -incre*175 )
+else if( midParent.rotation.y >= -incre*174 )
 {
-    midParent.rotation.y -=incre*direct;
+    midParent.rotation.y -=incre*2;
     midObject.material = materialCollection[currentPage];
 }
-else if( midParent.rotation.y >= -incre*179 )
+else if( midParent.rotation.y >= -incre*178 )
 {
-    midParent.rotation.y -=incre*direct;
+    midParent.rotation.y -=incre*2;
     leftObject.material = materialCollection[currentPage];
 }
 else
@@ -237,25 +233,25 @@ else
 if(pageLock==1 && direct ==-1)
 {
     console.log(midParent.rotation.y);
-if( midParent.rotation.y <= -incre*89 )
+if( midParent.rotation.y <= -incre*92 )
 {
-    midParent.rotation.y +=incre;
+    midParent.rotation.y +=incre*2;
     leftObject.material = materialCollection[currentPage];
 }
-else if( midParent.rotation.y <= -incre*5 )
+else if( midParent.rotation.y <= -incre*6 )
 {
-    midParent.rotation.y +=incre;
+    midParent.rotation.y +=incre*2;
     midObject.material = materialCollection[currentPage+1];
 }
-else if( midParent.rotation.y <= -incre*1 )
+else if( midParent.rotation.y <= -incre*2 )
 {
-    midParent.rotation.y +=incre;
+    midParent.rotation.y +=incre*2;
     //midObject.material = materialCollection[currentPage+1];
     rightObject.material = materialCollection[currentPage+1];
 }
 else
 {
-    midParent.rotation.y = incre;
+    midParent.rotation.y = 0;
     pageLock = 0;
     skip = 0;
 }
