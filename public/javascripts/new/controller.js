@@ -1,6 +1,6 @@
 angular.module('On9book.new', ['angularFileUpload'])
 	.controller('newCtrl', ['$scope', '$http', '$upload', 'hotkeys', '$state', function($scope, $http, $upload, hotkeys, $state) {
-
+		cancelAnimationFrame(loop);//砍動畫thread
 		$scope.files = [];
 		$scope.allfiles = [];
 		$scope.focus = null;

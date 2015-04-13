@@ -1,3 +1,4 @@
+var loop;//動畫thread
 var app = angular.module('On9book', ['cfp.hotkeys', 'oitozero.ngSweetAlert', 'ui.router', 'On9book.index', 'On9book.book', 'On9book.new']);
 app.config(['$locationProvider', '$stateProvider', '$urlRouterProvider', function($locationProvider, $stateProvider, $urlRouterProvider) {
 	$stateProvider
