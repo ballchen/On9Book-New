@@ -11,7 +11,8 @@
     "bower_components",
     "public/components",
     "test",
-    "tests"
+    "tests",
+    "examples/*"
   ],
   "dependencies": {
     "angular-ui-router": "~0.2.13",
@@ -19,6 +20,7 @@
     "bootstrap": "~3.3.4",
     "ng-file-upload": "~3.2.4",
     "angular-sweetalert": "~1.1.0",
-    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.5"
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.5",
+    "threejs": "r70"
   }
 }

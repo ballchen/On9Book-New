@@ -8,7 +8,7 @@ var threeFunction = function (data)
             var incre = Math.PI/180;
             //var speedup=1.2;
             //var degree = 0;
-            var canvasWidth = 1200;
+            var canvasWidth = window.innerWidth*0.9;
             var canvasHeight = 675;
             var currentPage = 0;
             var pageLock = 0;
@@ -31,13 +31,13 @@ var threeFunction = function (data)
 
 
             var scene = new THREE.Scene();
-            var camera = new THREE.PerspectiveCamera(75, canvasWidth/canvasHeight, 0.1, 1000);
+            var camera = new THREE.PerspectiveCamera(70, canvasWidth/canvasHeight, 0.1, 1000);
             camera.position.z = 100;
             var renderer = new THREE.WebGLRenderer({antialias:true});
             renderer.setSize(canvasWidth, canvasHeight);
             renderer.setClearColor( 0xffffff, 1);
-            var container = document.getElementsByClassName('container');
-            container[0].appendChild(renderer.domElement);
+            var container = document.getElementById('animation');
+            container.appendChild(renderer.domElement);
 
 
 //parents
